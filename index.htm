@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML Sencilla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 360px;
+            border: none;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #number-box {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video en Puerto 3000</h1>
+        <iframe src="http://192.168.4.9:3000/video_feed" allowfullscreen></iframe>
+        
+        <div class="button-container">
+            <button class="button">T</button>
+            <button class="button">W</button>
+            <button class="button">S</button>
+            <button class="button">A</button>
+            <button class="button">D</button>
+            <button class="button">Z</button>
+        </div>
+        
+        <div id="number-box">
+            Sensor: <span id="number">123</span>
+        </div>
+    </div>
+</body>
+</html>
